@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Personal</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Xavier</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">Acerca de mí</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Abrir menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Hola, soy <span class="highlight">Xavier</span></h2>
+                    <p>Desarrollador Web Front-end</p>
+                    <a href="#projects" class="btn btn-primary">Ver mis proyectos</a>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/p/pfp.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-me">
+            <div class="container">
+                <h2>Acerca de mí</h2>
+                <p style="text-align: justify;">
+                    Soy un estudiante de pedagogía en los idiomas extranjeros ya poseyente de habilidades comunicativas en ingles de nivel B2 avaladas por The Michigan Assesment. 
+                    Además, estudio programación centrado en el desarrollo web con HTML, CSS, JS, y Node JS mediante el programa 
+                    de Jóvenes Creativos de ROFÉ en conjunto con la ESPOL aquí en Ecuador.</p>
+                <p style="text-align: justify;">Me apasiona crear experiencias web atractivas y funcionales. Siempre estoy buscando aprender a usar nuevas tecnologías y mejorar mis habilidades.</p>
+    
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h3>HTML5</h3>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="60"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>CSS3</h3>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="60"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>JavaScript</h3>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="50"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Inglés</h3>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Proyectos</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Proyecto 1</h3>
+                        <p>Página web de inicio de sesión interactiva y responsive.</p>
+                        <a href="https://gox-bit.github.io/jc-pr-pr/#" target="_blank" class="btn btn-secondary">Ver proyecto</a>
+                        <a href="https://github.com/Gox-bit/jc-pr-pr" target="_blank" class="btn btn-tertiary">Código fuente</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>¡Me encantaría saber de ti! Completa el formulario a continuación o encuéntrame en mis redes sociales.</p>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <div class="error-message" id="messageError"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Xavier. Todos los derechos reservados.</p>
+            <div class="social-links">
+                    <ion-icon name="logo-github"></ion-icon>
+              <a href="https://github.com/Gox-bit" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
