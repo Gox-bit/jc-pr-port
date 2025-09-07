@@ -2,10 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
    
     const hamburger = document.querySelector('.hamburger');
     const mainNav = document.querySelector('.main-nav');
+    const body = document.body;
 
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('is-active');
         mainNav.classList.toggle('is-active');
+        body.classList.toggle('menu-open');
     });
 
   
@@ -14,9 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
             if (mainNav.classList.contains('is-active')) {
                 hamburger.classList.remove('is-active');
                 mainNav.classList.remove('is-active');
+                body.classList.remove('menu-open');
             }
         });
     });
+    
+    body.addEventListener('click', (event) => {
+        if (body.classList.contains('menu-open') && !mainNav.contains(event.target) && !hamburger.contains(event.target)) {
+            hamburger.classList.remove('is-active');
+            mainNav.classList.remove('is-active');
+            body.classList.remove('menu-open');
+        }
+         });
+});
 
  
     const skillsSection = document.getElementById('skills');
@@ -108,5 +120,3 @@ document.addEventListener('DOMContentLoaded', () => {
             heroContent.innerHTML = originalText;
         }
     });
-
-});
