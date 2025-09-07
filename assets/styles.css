@@ -424,6 +424,7 @@ footer .container {
         left: 0;
         width: 100%;
         box-shadow: var(--box-shadow);
+        
     }
 
     .main-nav.is-active {
